@@ -83,9 +83,9 @@ export default async function Image() {
                         alignItems: 'center',
                         textTransform: 'uppercase'
                     }}>
-                        <span>MTV: THE</span>
-                        <span>FINAL</span>
-                        <span>BROADCAST</span>
+                        <span>MTV:</span>
+                        <span>LA ÚLTIMA</span>
+                        <span>TRANSMISIÓN</span>
                     </div>
 
                     <div style={{
