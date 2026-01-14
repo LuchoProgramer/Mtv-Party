@@ -28,9 +28,14 @@ export const Pricing = () => {
                             Micrófono abierto
                         </div>
                     </div>
-                    <button className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-white/10 text-white text-sm font-black uppercase tracking-widest border border-white/10 hover:bg-white/20 transition-colors">
+                    <a
+                        href="https://wa.me/593960300261?text=Hola,%20quiero%20comprar%20mi%20Pase%20B%C3%A1sico%20para%20MTV%20Party%20($10).%20%F0%9F%8E%AB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-white/10 text-white text-sm font-black uppercase tracking-widest border border-white/10 hover:bg-white/20 transition-colors"
+                    >
                         <span className="truncate">Comprar</span>
-                    </button>
+                    </a>
                 </div>
 
                 <div className="magenta-glow flex flex-col gap-4 rounded-xl border-2 border-secondary bg-[#1a0a1a] p-6 relative overflow-hidden">
@@ -48,6 +53,22 @@ export const Pricing = () => {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 gap-3 my-2">
+                        <div className="text-xs font-medium flex gap-3 text-white">
+                            <span className="material-symbols-outlined text-secondary text-sm">stars</span>
+                            Acceso VIP Prioritario (Sin filas)
+                        </div>
+                        <div className="text-xs font-medium flex gap-3 text-white">
+                            <span className="material-symbols-outlined text-secondary text-sm">stars</span>
+                            Mesa reservada en zona lounge
+                        </div>
+                        <div className="text-xs font-medium flex gap-3 text-white">
+                            <span className="material-symbols-outlined text-secondary text-sm">stars</span>
+                            Kit de Bienvenida Retro
+                        </div>
+                        <div className="text-xs font-medium flex gap-3 text-white">
+                            <span className="material-symbols-outlined text-secondary text-sm">stars</span>
+                            Magenta Glow Experience (Barra Premium)
+                        </div>
                         <div className="text-xs font-medium flex gap-3 text-white">
                             <span className="material-symbols-outlined text-secondary text-sm">stars</span>
                             BodyBrownie Access
@@ -81,9 +102,14 @@ export const Pricing = () => {
                             Show Room & Desfiles
                         </div>
                     </div>
-                    <button className="cyan-glow flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 bg-primary text-background-dark text-sm font-black uppercase tracking-widest hover:scale-[1.02] transition-transform">
+                    <a
+                        href="https://wa.me/593960300261?text=Hola,%20quiero%20reservar%20mi%20Experiencia%20VIP%20Completa%20para%20MTV%20Party%20($25)!%20%F0%9F%8C%9F"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cyan-glow flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 bg-primary text-background-dark text-sm font-black uppercase tracking-widest hover:scale-[1.02] transition-transform"
+                    >
                         <span className="truncate">RESERVAR VIP</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </React.Fragment>

@@ -24,9 +24,14 @@ export const Hero = () => {
                             <p className="text-white/70 text-lg font-medium">21 de febrero • 17:00 HRS</p>
                         </div>
                     </div>
-                    <button className="cyan-glow flex min-w-[240px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-background-dark text-base font-black leading-normal tracking-widest hover:scale-105 transition-transform">
+                    <a
+                        href="https://wa.me/593960300261?text=Hola,%20quiero%20reservar%20mi%20cupo%20VIP%20para%20MTV%20Party!%20%F0%9F%8E%AB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cyan-glow flex min-w-[240px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-background-dark text-base font-black leading-normal tracking-widest hover:scale-105 transition-transform"
+                    >
                         <span className="truncate">RESERVAR CUPO VIP</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
