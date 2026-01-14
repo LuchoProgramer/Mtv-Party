@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #0df2f2;
+  --color-secondary: #ff00ff;
+  --color-background-light: #f5f8f8;
+  --color-background-dark: #0a0a0a;
+  --color-surface-dark: #161b1b;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom VHS Effects */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 255, 0, 0.06));
+    background-size: 100% 4px, 3px 100%;
+    pointer-events: none;
+    z-index: 50;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.vhs-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 49;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCgLuRj1IqiItSSVzK_aphF2RhFHbfgA9ssgQkia7DmxFK_KTJhiKDZyCWk1orODUYXO4-QonVrKwaN4Crpneuxi4BCOZoB8-sr9KnN64TPj0afWPYxCKQjifQQwGL7Butg-jEtJcZvQDSGbLWOFixbMmCu3qakOB2I6-CrjPbvPYzJOlTf6vi6FGvlce8_870dlqUHWZVXPHVNIAKOJDkdTY3BnfecWuBc3Kv3Q3Q97B_u243XoSmNYhDJuHZzUw6-o8qRH8bk_I8);
+}
+
+.glitch-text {
+    text-shadow: 2px 0 #f0f, -2px 0 #0df2f2;
+}
+
+.magenta-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+}
+
+.cyan-glow {
+    box-shadow: 0 0 15px rgba(13, 242, 242, 0.5);
+}
+
+.color-bleed {
+    filter: drop-shadow(2px 0px 0px rgba(255,0,255,0.8)) drop-shadow(-2px 0px 0px rgba(0,255,255,0.8));
+}
+
+.vhs-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.vhs-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(255, 0, 255, 0.05) 50%, transparent 50%, rgba(0, 255, 255, 0.05));
+    background-size: 100% 20px;
+    pointer-events: none;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-background-dark);
+    color: white;
+    font-family: var(--font-display);
+    position: relative;
+    min-height: 100dvh;
 }
