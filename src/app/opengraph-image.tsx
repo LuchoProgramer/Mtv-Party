@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = 'MTV: THE FINAL BROADCAST - Propulsar Party';
+export const alt = 'MTV: LA ÚLTIMA TRANSMISIÓN - Propulsar Party';
 export const size = {
     width: 1200,
     height: 630,
