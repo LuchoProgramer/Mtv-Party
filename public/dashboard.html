@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTER PLAN: MTV FINAL BROADCAST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .section-header {
+            border-bottom: 2px solid #0f172a;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.6em;
+            font-size: 0.75em;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+        }
+
+        .badge-blue {
+            color: #fff;
+            background-color: #2563eb;
+        }
+
+        .badge-black {
+            color: #fff;
+            background-color: #0f172a;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #e2e8f0;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2563eb;
+        }
+    </style>
+</head>
+
+<body class="p-12 max-w-5xl mx-auto">
+
+    <!-- Header -->
+    <header class="mb-12 flex justify-between items-start border-b border-slate-200 pb-8">
+        <div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 uppercase">Master Plan: Operaciones</h1>
+            <p class="text-slate-500 text-lg mt-2">Proyecto: MTV The Final Broadcast</p>
+        </div>
+        <div class="text-right">
+            <div class="inline-block bg-slate-900 text-white px-4 py-2 rounded font-bold text-sm mb-2">DOCUMENTO
+                CONFIDENCIAL</div>
+            <p class="text-sm text-slate-500 font-mono">Ver. 2.1 - Final Strategy</p>
+        </div>
+    </header>
+
+    <!-- 1. Cronología de Guerra -->
+    <section class="mb-12 break-inside-avoid">
+        <div class="section-header">
+            <h2 class="text-2xl font-bold uppercase">1. Cronología de Guerra</h2>
+            <span class="text-sm font-semibold text-slate-500">Objetivo: Sold Out (11 Feb)</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                <div class="timeline-item">
+                    <h3 class="font-bold text-slate-900">Fase 1: Hype & Leak</h3>
+                    <p class="text-xs font-bold text-blue-600 mb-1">14 - 21 Enero (En Curso)</p>
+                    <p class="text-sm text-slate-600">Modelos suben contenido "robado" o low-fi. No se vende, se genera
+                        curiosidad.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-slate-900">Fase 2: Lanzamiento & Preventa</h3>
+                    <p class="text-xs font-bold text-blue-600 mb-1">22 Enero - 31 Enero</p>
+                    <p class="text-sm text-slate-600">Apertura Landing Page. Meta: Vender primeros 30 cupos. Gancho:
+                        Shot Gratis.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-slate-900">Fase 3: Presión de Escasez</h3>
+                    <p class="text-xs font-bold text-blue-600 mb-1">1 - 10 Febrero</p>
+                    <p class="text-sm text-slate-600">Pauta $20 Instagram. Anuncio "Últimos 20 cupos Rockstar".</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                <div class="timeline-item">
+                    <h3 class="font-bold text-slate-900">Fase 4: Cierre Total (DEADLINE)</h3>
+                    <p class="text-xs font-bold text-red-600 mb-1">11 de Febrero</p>
+                    <p class="text-sm text-slate-600">Cierre de ventas. Anuncio "Sold Out" para generar prestigio.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3 class="font-bold text-slate-900">Fase 5: Logística Final</h3>
+                    <p class="text-xs font-bold text-blue-600 mb-1">12 - 20 Febrero</p>
+                    <p class="text-sm text-slate-600">Compra de insumos (bebidas, brownies, choripanes) con recaudación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Definición de Experiencias -->
+    <section class="mb-12 break-inside-avoid">
+        <div class="section-header">
+            <h2 class="text-2xl font-bold uppercase">2. Catálogo de Productos</h2>
+            <span class="text-sm font-semibold text-slate-500">Estrategia: Vender Estatus</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Basic -->
+            <div class="border border-slate-200 rounded-lg p-6 bg-slate-50">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-lg">Acceso Básico</h3>
+                    <span class="badge badge-black">$10.00</span>
+                </div>
+                <ul class="text-sm space-y-2 text-slate-700 list-disc list-inside">
+                    <li>Entrada a la Terraza.</li>
+                    <li>Acceso al Open Mic.</li>
+                    <li><strong class="text-slate-900">1 Shot de cortesía</strong> (Solo mediante escaneo QR de
+                        seguidor).</li>
+                </ul>
+            </div>
+            <!-- VIP -->
+            <div class="border border-blue-200 rounded-lg p-6 bg-blue-50">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="font-bold text-lg text-blue-800">Experiencia Rockstar VIP</h3>
+                    <span class="badge badge-blue">$25.00</span>
+                </div>
+                <ul class="text-sm space-y-2 text-slate-800 list-disc list-inside">
+                    <li><strong>Gastronomía:</strong> 1 Choripán artesanal + Barra Libre (show principal).</li>
+                    <li><strong>Arte Vivo:</strong> Lugar preferencial show Body Brownie.</li>
+                    <li><strong>Juego:</strong> 1 Tabla de Bingo (Premios: fotos/marcas).</li>
+                    <li><strong>Recuerdos:</strong> Acceso Stand de fotos 90s.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Guía de Producción & 4. Sistema Cero Efectivo -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 break-inside-avoid">
+        <section>
+            <div class="section-header">
+                <h2 class="text-xl font-bold uppercase">3. Producción (Look & Feel)</h2>
+            </div>
+            <div class="text-sm space-y-3 text-slate-700">
+                <p><strong>💡 Iluminación:</strong> Exclusivo LED Cian/Magenta. Proyectores con visuales estática y
+                    clips 90s (Beavis & Butt-Head).</p>
+                <p><strong>📺 Escenografía:</strong> Pila de TVs antiguas (decoradas graffiti/neón).</p>
+                <p><strong>🎭 Puesta en Escena:</strong> Modelos (Maru, Sofi, Gabo, Lucho) en constante movimiento,
+                    parte de la exhibición.</p>
+                <p><strong>🍫 Body Brownie:</strong> Cuerpo como lienzo. Chocolate líquido, brownies, frutas. Protocolos
+                    de higiene (guantes) obligatorios.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2 class="text-xl font-bold uppercase">4. Sistema "Cero Efectivo"</h2>
+            </div>
+            <div class="bg-slate-900 text-white p-5 rounded-lg text-sm space-y-3">
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-yellow-400">PREVENTA:</span>
+                    <p>100% WhatsApp + Transferencia.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-yellow-400">EVENTO:</span>
+                    <p>QRs Gigantes (Deuna/Pichincha) en Entrada, Barra y Stand Fotos.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="font-bold text-yellow-400">VALIDACIÓN:</span>
+                    <p>Lista impresa para tachar nombres (QR Acceso).</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="mt-16 pt-8 border-t border-slate-200 text-center text-xs text-slate-400">
+        <p>PROPULSAR PRODUCCIONES © 2026 - DOCUMENTO DE USO INTERNO EXCLUSIVO</p>
+    </footer>
+
+</body>
+
+</html>
